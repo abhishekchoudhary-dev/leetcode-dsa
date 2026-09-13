@@ -9,6 +9,7 @@
 # otherwise when we return changes we use a 10 first instead of two fives as 5 is more valuable. So while returning if we have a ten we return ten plus 5 and 
 # if ten count is 0 then we return 3 fives.
 
+
 from typing import List
 class Solution:
     def lemonadeChange(self, bills: List[int]) -> bool:
