@@ -8,6 +8,7 @@
 # if its successful and this value bubbles up the stack.
 
 from collections import defaultdict
+from collections import Counter
 class Solution:
     def longestSubstring(self, s: str, k: int) -> int:
         d = Counter(s)
