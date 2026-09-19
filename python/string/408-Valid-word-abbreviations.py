@@ -9,6 +9,7 @@
 # then we increment i number times so get it in sync with abbr again. Then we keep moving both and if our logic is correct both should reach enter together.
 # we check this in our return statement and return True based on that
 
+
 class Solution:
     def validWordAbbreviation(self, word: str, abbr: str) -> bool:
         i = j =0
