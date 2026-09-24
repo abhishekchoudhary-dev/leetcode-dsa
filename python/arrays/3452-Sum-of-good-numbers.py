@@ -6,6 +6,7 @@
 # Approach: We take each number and check if i-k and i+k are in range for it and take it if its strictly greater than both in the range
 # or greater than one of them in the range and if yes then we include it in the total.
 
+
 from typing import List
 class Solution:
     def sumOfGoodNumbers(self, nums: List[int], k: int) -> int:
