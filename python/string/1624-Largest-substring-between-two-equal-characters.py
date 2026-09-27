@@ -6,6 +6,7 @@
 # Approach: We simply keep a hashmap where we add the earliest occurrence of each character and then for the current character
 # we check if its already in the hashmap and if it is we take into best the length of the substrings between them and this way we will find the longest substring.
 
+
 class Solution:
     def maxLengthBetweenEqualCharacters(self, s: str) -> int:
         best = -1
