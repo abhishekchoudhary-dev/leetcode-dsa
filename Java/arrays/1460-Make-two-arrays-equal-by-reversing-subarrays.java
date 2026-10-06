@@ -1,13 +1,13 @@
 package Java.arrays;
 
 /* 
-# Problem: Leetcode 961 - N repeated element in size 2N arrat
+# Problem: Leetcode 1460 - Make two arrays equal by reversing subarrays
 # Difficulty: Easy
-# Link: https://leetcode.com/problems/n-repeated-element-in-size-2N-array/description/
-# Time Complexity: O(n)
-# Space Complexity: O(n) as we use a set
-# Approach: We just check for the first repeated value and we immediately return. we can have a final return 0 or throw a runtTime exception if 
-# if the code flow reaches there as it was not supposed to.
+# Link: https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/description/
+# Time Complexity: O(n log n) due to sorting
+# Space Complexity: O(n) depending on what type of internal sort is used
+# Approach: Since all types of swapping is allowed we basically have to check parity of starting and target array.
+# If they have equal parity then we can say that target can be achieved since any pair can be shuffled.
 */
 import java.util.*;
 class Solution {
