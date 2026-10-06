@@ -8,6 +8,7 @@ package Java.arrays;
 # Approach: We just check for the first repeated value and we immediately return. we can have a final return 0 or throw a runtTime exception if 
 # if the code flow reaches there as it was not supposed to.
 */
+import java.util.*;
 class Solution {
     public int repeatedNTimes(int[] nums) {
         Set<Integer> s = new HashSet<>();
