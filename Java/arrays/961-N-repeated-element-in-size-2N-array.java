@@ -1,3 +1,4 @@
+package Java.arrays;
 /* 
 # Problem: Leetcode 961 - N repeated element in size 2N arrat
 # Difficulty: Easy
