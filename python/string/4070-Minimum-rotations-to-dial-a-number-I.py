@@ -1,5 +1,4 @@
-
-#Problem: Leetcode 4070 - Minimum rotations to dial a number I
+# Problem: Leetcode 4070 - Minimum rotations to dial a number I
 # Difficulty: Easy
 # Link: https://leetcode.com/problems/minimum-rotations-to-dial-a-number-I/description/
 # Time Complexity: O(n) - as we iterate on words
