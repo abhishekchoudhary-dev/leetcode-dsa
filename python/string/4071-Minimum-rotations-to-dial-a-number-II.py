@@ -7,6 +7,7 @@
 # at each index by comparing rotations from previous index and with last string element(assuming string was rotated at this index). 
 # At end end we can just return the usual score minus the max gain we can take.
 
+
 class Solution:
     def minRotations(self, n: int, s: str) -> int:
         prev = 0
