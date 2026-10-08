@@ -19,5 +19,6 @@ class Solution {
             for(int j = start;j<=i;j++) total+=nums[j];
         }
         return total;
+        
     }
 } 
