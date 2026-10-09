@@ -13,6 +13,27 @@
 
 class Solution:
     def minInsertions(self, s: str) -> int:
+
+        '''
+        #stack implementation
+        stack = []
+        insert = 0
+        i = 0
+        while i < len(s):
+            if s[i]=='(':
+                stack.append(s[i])
+            else:
+                if i < len(s)-1 and s[i+1]==')':
+                    i+=1
+                else:
+                    insert+=1
+                if stack:
+                    stack.pop()
+                else:
+                    insert+=1
+            i+=1
+        return insert + len(stack)*2 #as only open ones in stack
+        '''
     
         close_count = open_count = 0
         insertion = 0
