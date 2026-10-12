@@ -13,8 +13,6 @@
 from typing import List
 class Solution:
     def alternatingSubarray(self, nums: List[int]) -> int:
-        
-        
         best = -1
         alter = 1
         inSeq = False
