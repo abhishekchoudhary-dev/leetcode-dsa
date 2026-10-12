@@ -9,16 +9,6 @@
 # and similarly if a difference of -1 extends a previous sequence or not. Any other difference which is not 1 or -1 definitely break the sequence
 # and we reset our flags and the parity to find a new sequence.
 
-from typing import List
-
-class Solution:
-    def vowelStrings(self, words: List[str], left: int, right: int) -> int:
-        cnt = 0
-        vowels = ('a','e','i','o','u')
-        for idx,word in enumerate(words):
-            if word[0] in vowels and word[-1] in vowels and idx>=left and idx<=right:
-                cnt +=1
-        return cnt
 
 from typing import List
 class Solution:
