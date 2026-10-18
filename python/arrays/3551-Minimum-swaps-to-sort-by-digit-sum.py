@@ -2,7 +2,7 @@
 # Difficulty: Medium
 # Link: https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/description/
 # Time Complexity: O(n)
-# Space Complexity: O(1)
+# Space Complexity: O(n) as we store digit sums
 # Approach: We use the standard idea where we need to find the arr_pos array wheich will hold the position of the index where the actual element which will finally be placed in the sorted array resides.
 # For this we have to first find digit sum array and sort based on digit sum and if there is a tie we sort by nums[i].
 # Then we detect cycles in this arr_pos as each cycle needs cycle_size-1 sorts to be sorted.
