@@ -1,4 +1,3 @@
-
 /* 
 # Problem: Leetcode 3120 - Count the number of special characters in a string
 # Difficulty: Medium
