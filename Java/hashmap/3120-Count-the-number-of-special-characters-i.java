@@ -1,5 +1,6 @@
+
 /* 
-Problem: Leetcode 3120 - Count the number of special characters in a string
+# Problem: Leetcode 3120 - Count the number of special characters in a string
 # Difficulty: Medium
 # Link: https://leetcode.com/problems/count-the-number-of-special-characters-in-a-string/description/
 # Time Complexity: O(n) - as we go through all the elements of the string in worst case
