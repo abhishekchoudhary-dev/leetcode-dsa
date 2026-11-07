@@ -1,0 +1,30 @@
+
+# Problem: Leetcode 4102 - Count valid substrings I
+# Difficulty: Medium
+# Link: https://leetcode.com/problems/count-valid-substrings-I/description/
+# Time Complexity: O(n) 
+# Space Complexity: O(n)
+# Approach: We count the valid substrings by keeping going forward with our pointer till we encouter a c which follows an a and b which means abc has been found in this substring
+# then taken all substring is bad because its hard to calculate how many of them will have abc. so we take the substring legnth till previous index of c
+# and then we take all the substring there but here is the tricky part. we set the prev pointer to i-1 to include all the substring from 'b' but this means that when 
+# we took all the subtring between prev and i-1(as 'c' was a i) we need to substract 1 from the total as the substring 'b' will repeat otherwise
+# increasing the total count. And ofcourse the substring are caclculated by the formula n*n+1//2
+
+
+class Solution:
+    def countValidSubstrings(self, s: str) -> int:
+        if len(s)<3:
+            return len(s)*(len(s)+1)//2
+        total = 0
+        i = 0
+        prev = 0
+        while i < len(s):
+            if i>1 and s[i]=='c':
+                if s[i-1]=='b' and s[i-2] == 'a':
+                    length = i - 1 - prev + 1
+                    total += (length*(length+1)//2) - 1
+                    prev = i - 1
+            i+=1
+        remaining = len(s)- prev
+        total += remaining*(remaining+1)//2
+        return total
